@@ -10,6 +10,9 @@ import java.util.List;
 
 import org.hibernate.Session;
 
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
 import Poc.TestSqliteJdbc.entity.Word;
 import Poc.TestSqliteJdbc.util.HibernateUtil;
 
@@ -21,26 +24,10 @@ public class App
 {
     public static void main( String[] args ) throws ClassNotFoundException
     {
-       
-    	Session session = null;
-		
-		try {
-			session = HibernateUtil.getSession();
-			
-			// Fetching saved data
-			List<Word> wordList = session.createQuery("from Word").list();
-			
-			for (Word w : wordList) {
-				System.out.println(w);
-			}
-			
-		} catch (Exception ex) {
-			ex.printStackTrace();
-		} finally{
-			if(session != null) {
-				session.close();
-			}
-		}
+    	// Initialize Spring ApplicationContext
+    	ApplicationContext ctx = new ClassPathXmlApplicationContext
+    	("C:/Users/Dina/git/SQLite/TestSqliteJdbc/src/main/resources/springAppCntx.xml");
+    	
       
     }
 }
