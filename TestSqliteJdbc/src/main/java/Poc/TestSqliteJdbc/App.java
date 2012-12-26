@@ -12,6 +12,7 @@ import org.hibernate.Session;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.jdbc.core.simple.SimpleJdbcTemplate;
 
 import Poc.TestSqliteJdbc.entity.Word;
 import Poc.TestSqliteJdbc.util.HibernateUtil;
@@ -26,7 +27,9 @@ public class App
     {
     	// Initialize Spring ApplicationContext
     	ApplicationContext ctx = new ClassPathXmlApplicationContext
-    	("C:/Users/Dina/git/SQLite/TestSqliteJdbc/src/main/resources/springAppCntx.xml");
+    	("springAppCntx.xml");
+    	
+    	SimpleJdbcTemplate simpleJdbcTemplate = (SimpleJdbcTemplate) ctx.getBean("jdbcTemplate");
     	
       
     }
