@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="0.014" errors="0" skipped="0" tests="1" name="Poc.TestSqliteJdbc.AppTest">
+<testsuite failures="0" time="0.003" errors="0" skipped="0" tests="1" name="poc.pestSqliteJdbc.AppTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.7.0_10\jre\bin"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="D:\dina\workspaces\Ostalo\TestSqliteJdbc"/>
+    <property name="user.dir" value="C:\Users\Dina\git\SQLite\TestSqliteJdbc"/>
     <property name="java.runtime.version" value="1.7.0_10-b18"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.7.0_10\jre\lib\endorsed"/>
@@ -27,7 +27,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 7"/>
-    <property name="classworlds.conf" value="D:\dina\workspaces\Ostalo\.metadata\.plugins\org.maven.ide.eclipse\launches\m2conf6701856070073617065.tmp"/>
+    <property name="classworlds.conf" value="D:\dina\workspaces\Ostalo\.metadata\.plugins\org.maven.ide.eclipse\launches\m2conf3071140323022864741.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1250"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk1.7.0_10\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;c:\MinGW\bin;C:\Program Files\TortoiseSVN\bin;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -62,5 +62,5 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase time="0.002" classname="Poc.TestSqliteJdbc.AppTest" name="testApp"/>
+  <testcase time="0" classname="poc.pestSqliteJdbc.AppTest" name="testApp"/>
 </testsuite>
