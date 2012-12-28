@@ -1,0 +1,7 @@
+# preporucljivo je dodavati retke rucno jer eclipse ne radi bas dobro. 
+# eclipse dodaje u ignore listu samo datoteke u trenutnom direktoriju
+.settings/
+.classpath
+.project
+.springBeans
+target/
