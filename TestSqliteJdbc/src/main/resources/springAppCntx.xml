@@ -6,14 +6,14 @@
 
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close" lazy-init="true">
     <property name="driverClassName" value="org.sqlite.JDBC" />
-    <property name="url" value="jdbc:sqlite:sample.db" />
+    <property name="url" value="jdbc:sqlite:dict.db" />
     <property name="initialSize" value="1" />
     <property name="maxActive" value="1" />
     <property name="maxIdle" value="1" />
     <property name="poolPreparedStatements" value="true" />
     <property name = "connectionInitSqls">
-<list><value>PRAGMA foreign_keys = ON</value></list>
-</property>
+		<list><value>PRAGMA foreign_keys = ON</value></list>
+	</property>
 </bean>
 
 
