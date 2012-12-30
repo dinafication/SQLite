@@ -12,6 +12,7 @@ import org.hibernate.Session;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.simple.SimpleJdbcTemplate;
 
 import Poc.TestSqliteJdbc.entity.Word;
@@ -29,12 +30,13 @@ public class App
     	ApplicationContext ctx = new ClassPathXmlApplicationContext
     	("springAppCntx.xml");
     	
-    	SimpleJdbcTemplate simpleJdbcTemplate = (SimpleJdbcTemplate) ctx.getBean("jdbcTemplate");
+    	JdbcTemplate simpleJdbcTemplate = (JdbcTemplate) ctx.getBean("jdbcTemplate");
     	
     	
     	String sql = "SELECT count(*) FROM Word";
     	 
     	int customers  = simpleJdbcTemplate.queryForInt(sql);
+    	//simpleJdbcTemplate.query(sql, Word.class);
     	
     	System.out.print(customers);
       
