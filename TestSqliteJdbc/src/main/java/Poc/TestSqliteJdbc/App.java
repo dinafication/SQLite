@@ -31,6 +31,12 @@ public class App
     	
     	SimpleJdbcTemplate simpleJdbcTemplate = (SimpleJdbcTemplate) ctx.getBean("jdbcTemplate");
     	
+    	
+    	String sql = "SELECT count(*) FROM Word";
+    	 
+    	int customers  = simpleJdbcTemplate.queryForInt(sql);
+    	
+    	System.out.print(customers);
       
     }
 }
