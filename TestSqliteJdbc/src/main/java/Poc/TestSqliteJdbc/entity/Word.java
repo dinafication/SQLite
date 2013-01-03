@@ -28,16 +28,16 @@ public class Word implements Serializable{
 	
 	@Id 
 	@Column(name="language")
-	private Integer language;
+	private String language;
 	
 	@Column(name="level")
-	private Integer level;
+	private String level;
 
 	public Word() {
 
 	}
 
-	public Word(String phrase, Integer language, Integer level) {
+	public Word(String phrase, String language, String level) {
 		this.phrase = phrase;
 		this.language = language;
 		this.level = level;
@@ -53,19 +53,19 @@ public class Word implements Serializable{
 	}
 
 	 @Id
-	public Integer getLanguage() {
+	public String getLanguage() {
 		return language;
 	}
 
-	public void setLanguage(Integer language) {
+	public void setLanguage(String language) {
 		this.language = language;
 	}
 
-	public Integer getLevel() {
+	public String getLevel() {
 		return level;
 	}
 
-	public void setLevel(Integer level) {
+	public void setLevel(String level) {
 		this.level = level;
 	}
 	

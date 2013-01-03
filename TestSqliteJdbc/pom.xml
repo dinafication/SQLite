@@ -52,6 +52,15 @@
 			<scope>test</scope>
 		</dependency>
 
+		<!-- logging -->
+		<dependency>
+			<groupId>commons-logging</groupId>
+			<artifactId>commons-logging</artifactId>
+			<version>1.1.1</version>
+			<type>jar</type>
+			<scope>compile</scope>
+		</dependency>
+
 		<!-- HIBERNATE DEPENDENCIES -->
 		<dependency>
 			<groupId>org.hibernate</groupId>
@@ -174,6 +183,8 @@
 			<artifactId>spring-oxm</artifactId>
 			<version>${org.springframework.version}</version>
 		</dependency>
+
+		
 
 		<!-- commons -->
 		<dependency>
