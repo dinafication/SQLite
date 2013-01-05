@@ -15,6 +15,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.simple.SimpleJdbcTemplate;
 
+import Poc.TestSqliteJdbc.dao.WordDao;
 import Poc.TestSqliteJdbc.entity.Word;
 import Poc.TestSqliteJdbc.util.HibernateUtil;
 
@@ -31,6 +32,8 @@ public class App
     	("springAppCntx.xml");
     	
     	JdbcTemplate simpleJdbcTemplate = (JdbcTemplate) ctx.getBean("jdbcTemplate");
+    	
+    	WordDao wd = (WordDao) ctx.getBean("WordDao");
     	
     	
     	String sql = "SELECT count(*) FROM Word";
