@@ -33,15 +33,15 @@ public class App
     	
     	JdbcTemplate simpleJdbcTemplate = (JdbcTemplate) ctx.getBean("jdbcTemplate");
     	
-    	WordDao wd = (WordDao) ctx.getBean("WordDao");
+    	WordDao wd = (WordDao) ctx.getBean("wordDao");
+    	Word w = wd.findById("p1", "GER");
     	
-    	
-    	String sql = "SELECT count(*) FROM Word";
-    	 
-    	int customers  = simpleJdbcTemplate.queryForInt(sql);
+//    	String sql = "SELECT count(*) FROM Word";
+//    	 
+//    	int customers  = simpleJdbcTemplate.queryForInt(sql);
     	//simpleJdbcTemplate.query(sql, Word.class);
     	
-    	System.out.print(customers);
+    	System.out.print(w.getLanguage());
       
     }
 }
