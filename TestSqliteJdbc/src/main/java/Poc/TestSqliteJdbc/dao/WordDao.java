@@ -21,6 +21,7 @@ import Poc.TestSqliteJdbc.entity.Word;
 @Repository("wordDao")
 @Transactional
 public class WordDao {
+	//
 	
 	private static final Logger log = LoggerFactory.getLogger(WordDao.class);
 	
