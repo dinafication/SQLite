@@ -11,6 +11,7 @@ import javax.persistence.Table;
  * The persistent class for the contact database table.
  *
  */
+@SuppressWarnings("serial")
 @Entity
 @Table(name = "word")
 public class Word implements Serializable{

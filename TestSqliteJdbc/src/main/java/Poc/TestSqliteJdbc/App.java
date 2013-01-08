@@ -15,7 +15,9 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.simple.SimpleJdbcTemplate;
 
+import Poc.TestSqliteJdbc.dao.TranslationDao;
 import Poc.TestSqliteJdbc.dao.WordDao;
+import Poc.TestSqliteJdbc.entity.Translation;
 import Poc.TestSqliteJdbc.entity.Word;
 import Poc.TestSqliteJdbc.util.HibernateUtil;
 
@@ -33,15 +35,15 @@ public class App
     	
     	JdbcTemplate simpleJdbcTemplate = (JdbcTemplate) ctx.getBean("jdbcTemplate");
     	
-    	WordDao wd = (WordDao) ctx.getBean("wordDao");
-    	Word w = wd.findById("p1", "GER");
+    	TranslationDao td = (TranslationDao) ctx.getBean("translationDao");
+    	Translation t = td.findById("p1", "GER","p1", "GER");
     	
 //    	String sql = "SELECT count(*) FROM Word";
 //    	 
 //    	int customers  = simpleJdbcTemplate.queryForInt(sql);
     	//simpleJdbcTemplate.query(sql, Word.class);
     	
-    	System.out.print(w.getLanguage());
+    	System.out.print(t.toString());
       
     }
 }

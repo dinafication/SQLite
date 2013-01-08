@@ -50,7 +50,7 @@ public class WordDao {
 
 			Session s = sessionFactory.getCurrentSession();
 			Criteria c = s.createCriteria(Word.class);
-			c.addOrder(Order.asc("naziv"));
+			c.addOrder(Order.asc("phrase"));
 
 			return c.list();
 		} finally {
