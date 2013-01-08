@@ -26,6 +26,7 @@ public class WordDao {
 	
 	private SessionFactory sessionFactory;
 	
+	@Transactional(readOnly = true)
 	public Word findById(String phrase, String language) {
 
 		log.debug("getNaziv begin");
